@@ -25,7 +25,7 @@ public class activity_retrofit_1 extends AppCompatActivity {
         //Retrofit Builder
 
         Retrofit retrofit = new Retrofit.Builder()
-                .baseUrl("https://run.mocky.io/v3")
+                .baseUrl("https://run.mocky.io")
                 .addConverterFactory(GsonConverterFactory.create())
                 .build();
 
@@ -44,10 +44,11 @@ public class activity_retrofit_1 extends AppCompatActivity {
                 }
                 String jsony="";
 
-                jsony = "ID:"+ response.body().getId()+
-                        "\nUser ID:"+ response.body().getUserId()+
-                        "\nTitle:"+ response.body().getTitle()+
-                        "\nCompleted"+ response.body().isCompleted();
+                jsony = "ID: "+ response.body().getId()+
+                        "\nUser ID: "+ response.body().getUserId()+
+                        "\nTitle: "+ response.body().getTitle()+
+                        "\nCompleted: "+ response.body().isCompleted();
+                txt.append(jsony);
 
 
             }

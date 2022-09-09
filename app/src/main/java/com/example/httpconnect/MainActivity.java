@@ -23,7 +23,7 @@ public class MainActivity extends AppCompatActivity {
         button1.setOnClickListener(view -> goToAnActivity());
 
         Button button2 = findViewById(R.id.button2);
-        button1.setOnClickListener(view -> goToAnActivity2());
+        button2.setOnClickListener(view -> goToAnActivity2());
 
     }
 
