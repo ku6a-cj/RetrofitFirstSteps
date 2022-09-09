@@ -5,7 +5,7 @@ import com.google.gson.annotations.SerializedName;
 
 public class DataModel {
 
-    //ta klasa będzie modelem do analizowania danych
+    //that class will be a model to parse a data
 
     private int userId;
 
@@ -16,6 +16,7 @@ public class DataModel {
     private boolean completed;
 
     // Getters
+    // CTRL + INSERT and that functions will be automatically made
 
     public int getUserId() {
         return userId;
